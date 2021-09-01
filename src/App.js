@@ -27,7 +27,7 @@ const App = () => {
 				<MovieListHeading heading={movies.title} />
 				<SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
 			</div>
-			<div className="flex flex-wrap grid grid-cols-3 space-x-4">
+			<div className="flex flex-wrap grid grid-cols-3 ml-2">
 				<MovieList
 					movies={movies}
 				/>

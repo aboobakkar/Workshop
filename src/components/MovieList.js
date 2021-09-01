@@ -6,7 +6,7 @@ let data = props.movies["content-items"]?.content;
 	return (
 		<>
 			{data && data.length>0 && data.map((movie, index) => (
-				<div key={index} className='py-2 mx-2'>
+				<div key={index} className='pr-2'>
 					<img 
 					className="border-gray-400"
 					src={'images/'+movie["poster-image"]} alt='movie'></img>

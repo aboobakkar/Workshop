@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import MovieList from './components/MovieList';
 import MovieListHeading from './components/MovieListHeading';
@@ -23,12 +22,12 @@ const App = () => {
 	  },[])
 
 	return (
-		<div className='container-fluid movie-app'>
+		<div className='container-fluid bg-black'>
 			<div className='row d-flex align-items-center mt-4 mb-4'>
 				<MovieListHeading heading={movies.title} />
 				<SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
 			</div>
-			<div className="card-list">
+			<div className="flex flex-wrap grid grid-cols-3 space-x-4">
 				<MovieList
 					movies={movies}
 				/>
